@@ -18,8 +18,16 @@ background: repeating-linear-gradient(
     lightgreen 10%
 )`
 
+const Start = styled.div`
+margin-left: 19.25%
+border-radius: 50%
+background: black
+border: 1px solid black
+height: 15px
+width: 15px`
+
 const Dot = styled.div`
-margin-left: 19.5%
+margin-left: -.5%
 border-radius: 50%
 background: black
 height: 15px
@@ -76,7 +84,9 @@ const Field4 = () => {
         </LeftEndzone>
             <Field>
 
-            <Dot /><Line /><Triangle />
+            <Start /><Line />
+            {/* <Dot /><Line /> */}
+            <Triangle />
 
         </Field>
             <RightEndzone>
