@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import field from './images/field.png'
+import Field from './scratch/Field'
+import Field2 from './scratch/Field2'
+import Field3 from './scratch/Field3'
+import Field4 from './scratch/Field4'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+      <img src={field} alt='field' />
+      <Field3 />
+      <Field />
+      <Field2 />
+      <Field4 />
     </div>
   );
 }
