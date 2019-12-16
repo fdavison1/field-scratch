@@ -52,7 +52,7 @@ justify-content: center
 align-items: center
 width: 100px
 height: 300px
-background: red`
+background: navy`
 
 const Home = styled.p`
 font-size: 5rem
