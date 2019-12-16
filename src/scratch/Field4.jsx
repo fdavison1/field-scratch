@@ -1,6 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const teams = {
+    team1: 'red',
+    team2:  'navy',
+    name1: 'Tigers',
+    name2: 'Bears'
+}
+
 const Wrapper = styled.div`
 display: flex
 align-items: center
@@ -52,7 +59,7 @@ justify-content: center
 align-items: center
 width: 100px
 height: 300px
-background: red`
+background: ${props => teams && teams.team1}`
 
 const RightEndzone  = styled.div`
 display: flex
@@ -60,17 +67,17 @@ justify-content: center
 align-items: center
 width: 100px
 height: 300px
-background: navy`
+background: ${props => teams && teams.team2}`
 
 const Home = styled.p`
 font-size: 5rem
-font-weight: bold
+font-weight: 400
 color: white
 transform: rotate(-90deg)`
 
 const Away = styled.p`
 font-size: 5rem
-font-weight: bold
+font-weight: 400
 color: white
 transform: rotate(90deg)`
 
@@ -80,7 +87,7 @@ const Field4 = () => {
 
         
         <LeftEndzone>
-            <Home>Tigers</Home>
+            <Home>{teams.name1.toUpperCase()}</Home>
         </LeftEndzone>
             <Field>
 
@@ -90,7 +97,7 @@ const Field4 = () => {
 
         </Field>
             <RightEndzone>
-                <Away>Bears</Away>
+                <Away>{teams.name2.toUpperCase()}</Away>
             </RightEndzone >
 
         </Wrapper>
